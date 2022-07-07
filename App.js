@@ -1,10 +1,11 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
+import Basket from './src/screens/Basket';
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Primeiro App com EXPO :D</Text>
+      <Basket />
       <StatusBar style="auto" />
     </View>
   );
