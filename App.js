@@ -5,8 +5,8 @@ import Basket from './src/screens/Basket';
 
 export default function App() {
   const [fontsLoaded] = useFonts({
-    "MonteSerratRegular": Montserrat_400Regular,
-    "MonteSerratBold": Montserrat_700Bold,
+    "MontSerratRegular": Montserrat_400Regular,
+    "MontSerratBold": Montserrat_700Bold,
   })
 
   if(!fontsLoaded){
