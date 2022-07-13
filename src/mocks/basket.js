@@ -10,7 +10,7 @@ const basket = {
         farmName: "Jenny Jack Farm",
         farmLogo: logo,
         description: "A basket with carefully selected products from farm to your kitchen",
-        price: "R$ 50,00",
+        price: "R$ 40,00",
     }
 }
 
