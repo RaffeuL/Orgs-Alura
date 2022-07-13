@@ -4,10 +4,10 @@ import TextMont from '../../../components/Text';
 
 import top from '../../../../assets/topo.png';
 
-export default function Top() {
+export default function Top({ title }) {
     return <>
         <Image source={top}  style={styles.top} />
-        <TextMont style={styles.title} >Basket details</TextMont>
+        <TextMont style={styles.title}>{ title }</TextMont>
     </>
 }
 

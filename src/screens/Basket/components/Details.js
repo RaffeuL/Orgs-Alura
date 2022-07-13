@@ -4,16 +4,16 @@ import { View, Image, StyleSheet } from 'react-native';
 import TextMont from '../../../components/Text';
 import logo from '../../../../assets/logo.png'
 
-export default function Details() {
+export default function Details({ name, farmName, farmLogo, description, price }) {
     return <>
         <View style={styles.basket}>
-            <TextMont style={styles.name}>Vegetable Basket</TextMont>
+            <TextMont style={styles.name}>{ name }</TextMont>
             <View style={styles.farm}>
-                <Image source={logo} style={styles.farmImage}/>
-                <TextMont style={styles.farmName}>Jenny Jack Farm</TextMont>
+                <Image source={farmLogo} style={styles.farmImage}/>
+                <TextMont style={styles.farmName}>{ farmName }</TextMont>
             </View>
-            <TextMont style={styles.description}>A basket with carefully selected products from farm to your kitchen</TextMont>
-            <TextMont style={styles.price}>R$ 40,00 </TextMont>
+            <TextMont style={styles.description}>{ description }</TextMont>
+            <TextMont style={styles.price}>{ price }</TextMont>
         </View>
     </>
 }

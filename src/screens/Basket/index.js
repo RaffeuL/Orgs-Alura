@@ -6,12 +6,12 @@ import Details from './components/Details';
 
 
 
-export default function Basket() {
+export default function Basket({ top, details }) {
     return <>
-        <Top />
+        <Top { ...top }/>
         
         <View style={styles.basket}>
-            <Details /> 
+            <Details  {...details}  /> 
         </View>
     </>  
 }
