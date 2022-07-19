@@ -1,10 +1,10 @@
 import React from 'react';
-import { View, Image, StyleSheet } from 'react-native';
+import { View, Image, StyleSheet, TouchableOpacity } from 'react-native';
 
 import TextMont from '../../../components/Text';
-import logo from '../../../../assets/logo.png'
+import Button from '../../../components/Button';
 
-export default function Details({ name, farmName, farmLogo, description, price }) {
+export default function Details({ name, farmName, farmLogo, description, price, button }) {
     return <>
         <View style={styles.basket}>
             <TextMont style={styles.name}>{ name }</TextMont>
@@ -14,6 +14,8 @@ export default function Details({ name, farmName, farmLogo, description, price }
             </View>
             <TextMont style={styles.description}>{ description }</TextMont>
             <TextMont style={styles.price}>{ price }</TextMont>
+            
+            <Button text={button} onPress={() => {}} style={styles.button} />
         </View>
     </>
 }
@@ -50,5 +52,5 @@ const styles = StyleSheet.create({
         fontSize: 26,
         lineHeight: 42,
         marginTop: 8,
-    }
+    },
 })
