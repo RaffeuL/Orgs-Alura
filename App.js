@@ -36,6 +36,7 @@ export default function App() {
   if(!fontsLoaded){
     return <AppLoading />
   }
+
   return (
     <SafeAreaView onLayout={ onLayoutRootView }>
       <StatusBar />

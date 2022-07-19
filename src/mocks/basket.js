@@ -39,7 +39,7 @@ const basket = {
             image: cucumber,
           },
           {
-            nonameme: "Pumpkin",
+            name: "Pumpkin",
             image: pumpkin,
           }
         ]

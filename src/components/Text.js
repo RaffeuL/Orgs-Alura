@@ -7,7 +7,7 @@ export default function TextMont( { children, style } ) {
     if(style?.fontWeight === 'bold'){
         styleMont = styles.textBold;
     }
-    return <Text style={[style, styleMont]}> {children} </Text>
+    return <Text style={[style, styleMont]}>{ children }</Text>
 }
 
 const styles = StyleSheet.create({
